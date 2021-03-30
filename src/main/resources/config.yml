@@ -1,0 +1,37 @@
+# spigot-sudo
+#
+# You should instead access this file using the in-game configuration
+# command. Since the console can access spigot-sudo's configuration
+# at all times, simply give yourself sudo permissions from the server
+# console. Do note that only sudoers can change this file using the
+# in-game configuration command.
+
+# =============================================================
+# WARNING! This is your sudoers list. This list contains all users
+# who you wish to give permission to use sudo commands.
+# =============================================================
+sudoers:
+  # This is a list of users permitted to run commands as the console.
+  # Note that this is VERY DANGEROUS and can allow a user to
+  # forcefully op or deop any user, including themselves. This
+  # can also trick plugins into thinking that the console is
+  # executing the command. USE WITH GREAT CAUTION!
+  console: []
+  # This is a list of users permitted to run commands as other
+  # users. Instead of a security issue, this turns it into a
+  # privacy issue. Restrict this command to only the highest of
+  # operators on your server, since this can allow any user to
+  # forcefully run any command without user confirmation.
+  users: []
+
+# DO NOT ENABLE THIS UNLESS YOU KNOW WHAT YOU'RE DOING!
+#
+# This will allow users that have the appropriate permission
+# to run sudo commands. Being an operator implicitly grants
+# these commands, so use this with caution.
+use-permission: false
+
+# Whether or not all sudo actions will be logged.
+use-log: true
+
+message-prefix: '&8[sudo]: &7'

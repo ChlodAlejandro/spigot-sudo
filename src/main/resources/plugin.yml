@@ -1,0 +1,18 @@
+name: Sudo
+main: net.chlod.spigot.sudo.SudoPlugin
+version: 1.0
+author: Chlod
+api-version: 1.16
+website: https://spigot.chlod.net/sudo
+commands:
+  sudoconfig:
+    description: Configure the list of sudoers.
+    usage: /sudoconfig
+  sudo:
+    description: Force the console to run a command.
+    usage: /over <command>
+    aliases:
+      - console
+  su:
+    description: Force any user to run a command.
+    usage: /su <command> <user>
